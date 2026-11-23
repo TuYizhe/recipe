@@ -1,0 +1,51 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Copyrighted page snapshots for local parser testing only
+fixtures/
+
+# playwright
+test-results/
+playwright-report/
+
+# generated screenshots
+/tmp/*.png
+
+# throwaway local scripts (screenshots, one-off checks)
+_shot-*.ts
+_scratch-*.ts
+.claude/settings.local.json
+
+# transient release-notes file written by scripts/release.mjs
+.release-notes.tmp.md
+
+# demo videos live in docs/screenshots but are too big to track (keep PNGs, not video)
+docs/screenshots/*.mp4
+.wrangler/
+
+# local tooling
+.claude/
+_archive/**/node_modules
+_archive/**/dist
